@@ -1,0 +1,40 @@
+
+############################## MASTER ##############################
+
+The master process allows the user to interact with the simulation guiding him throught the steps needed to land a succesful simulation. 
+
+Just like an UI process, the master will ask the user to insert the following information regarding the simulation the user wants to proceed with:
+
+-1- First of all the UI portion of the program will ask how big of a memory the user wants to transfer from the producer process to the consumer process.
+
+-2- The second step will be for the user to insert the type of comunication method he wants to test: 
+the option will either be:
+	
+	-[1] to use the UN-NAMED PIPES model
+	-[2] to use the NAMED PIPES model
+	-[3] to use the SOCKETS model
+	-[4] to use the SHARES MEMORY WITH CIRCULAR BUFFER model
+
+If the user types in [-1], the program will close all the comunication channels and processes currently running and it will end the simulation.
+
+If the user either chooses the third or the fourth model the interface will ask some addtional infos about the data transferring process.
+
+-3- additional info
+
+	-3.1- If the THIRD [3] option is choosen, the master proces will ask the user to choose a port number from 1240 and 49000. If this port is by chance already in use the server portion of the socket comunication structure will later tell you this and exit.
+	-3.2- If the FOURTH [4] option is choosen, the master proces will ask the user to choose a circular buffer size from  0.1 up to 10 KB in order to share data trhough the use of shared user-memory. 
+
+If any of the fields entered by the user do not match the data expected by the program, it will tell the user about the mistake and it will free the field to try entering it again.
+
+Depending on the inputs given to the UI portion of the process, the master process will manage to create and eventually destroy all the elements for comuncation needed for conducting the time tracking.
+The while loop the process works with will let the user try another simulation once he gets done with a previous one.
+a
+At the end of the simulation the user will be left with four data elements: 
+
+	-1- The absolute time of the begining of the session [s]
+ 	-2- The absolute time of the ending of the session [s]
+	-3- The difference between the two [s]
+	-4- And the speed at which the simulation has operated [kb/s]
+
+
+

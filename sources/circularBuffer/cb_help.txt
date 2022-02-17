@@ -1,0 +1,14 @@
+### CIRCULAR BUFFER ###
+In this modality, a circular buffer is implemented to share data between processes (in this case, a producer and a consumer). 
+When the program starts, the user will have to choose the amount of data he wants to share (up to 100 Mb) and the size of the circular buffer (0.1-10 Kb).
+A file descriptor for the shared memory is obtained as a return of the 'shm_open()' function, the memory region is resized to the correct size ('ftruncate()' function) and the 'mmap()' function is called to create a new mapping in the virtual address space of the calling process.
+Basically, the producer writes data in the circular buffer and the consumer has an array that is filled with that data.
+To properly sync the inter-process buffer read/write operations, it's been implemented three semaphores: 
+- the first one is used to protect the buffer;
+- the second one blocks the producer if the buffer is full;
+- the third one blocks the consumer if the buffer is empty.
+After the completion of the process, the time at which the producer started to write on the buffer and the one at which the consumer finished reading are sent to the master process.
+Finally, the file descriptor for the shared memory is removed ('shm_unlink()'), the mapping is deleted ('munmap()') and all the semaphores are closed and unlinked ('sem_close()' and 'sem_unlink()').
+
+
+ 

@@ -1,0 +1,14 @@
+
+########################## SOCKETS #############################
+
+Sockets are a bidirectional, end-point comunication interface which allow data sharing between two different processes on the same or different machine. They use the client server model for communicating. These two terms refer to the processes which will be communicating with each other. The clients connects to the process server typically to make a request of information. In our test the communication established between the server and the client will identify the server as the producer process and the client as the receiver. After the communication is established between the two processes the data stream will be handled as it follows.
+
+
+-1- The producer will start producing the assigned amount of data and it'll store it inside of an array. This memory buffer will contain maximum 0.8 MB of memory. If the size requested to transfer is higher than the prefixed amount, the same array will be sent to the receiver as many time as needed for matching the correct amount of memory to transfer.
+
+-2- The data the data will be sent on the socket element by element throught the use of the function do_stuff that will publish the data with the write sys-call. 
+
+Concurrently, the consumer process will read and sequentially store the data into an array of the same dimentions of the previus one through the use of a similar procedure. The array will be filled up until it's full. Once the maximum amount of data will be reached the process will start filling it back from the first buffer spot. 
+
+Once the transfering data procedure terminates, the time values retrieved by the two processes (repectively at the beginning of the transfer for the producer and at the end of it for the consumer) will be sent by 2 different named pipes to the master process which will subtract them to find the time spent for transferring the data.
+ 

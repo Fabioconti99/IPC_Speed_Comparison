@@ -1,0 +1,21 @@
+
+########################## NAMED PIPES #############################
+
+The Named Pipes (or FIFO) are a similar comunication mechanism to the Un-Named Pipes. The main different between the two is the fact that the Named pipes have a name in the file system. This advantage lets any process with the correct permission access the pipe for writing or reading from it.
+
+If this method of comunication is choosen by the user, in the master process a named Pipe will be created. The program will set the name of the pipe and it will send it via argument of the exec function to the program that will manage the comunication between the producer and the consumer program.
+
+After retrieving the required data for the exchange, the process will fork itself into a producer and a consumer type of process.
+
+The child portion will represent the producer and the parent the consumer. According to their role, the first one will open up the fifo with a "write only" permission, while the second one with a "read only" permission.
+
+The producer will go through the following steps:
+
+-1- It will start producing the assigned amount of data and it'll store it inside of an array. This memory buffer will contain maximum 0.8 MB of memory. If the size requested to transfer is higher than the prefixed amount, the same array will be sent to the receiver as many time as needed for matching the correct amount of memory to transfer.
+
+-2- The data the data will be sent on the pipe element by element throught the use of the write syscall. 
+
+Concurrently, the consumer process will read and sequentially store the data into an array of the same dimensions of the previus one through the use of a similar procedure. The array will be filled up until it's full. Once the maximum amount of data will be reached the process will start filling it back from the first buffer spot. 
+
+Once the transfering data procedure terminates, the time values retrieved by the two processes (respectively at the beginning of the transfer for the producer and at the end of it for the consumer) will be sent by 2 different named pipes to the master process which will subtract them to find the time spent for transfering the data.
+ 

@@ -1,0 +1,502 @@
+[184801] Executable: ./master - Content: Main Process Started- Time: Sun Dec 26 18:47:29 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:47:32 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:47:33 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:47:33 2021
+
+[184826] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:47:33 2021
+
+[184826] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:47:33 2021
+
+[184827] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:47:33 2021
+
+[184827] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:47:33 2021
+
+[184827] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:47:34 2021
+
+[184827] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:47:34 2021
+
+[184826] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:47:34 2021
+
+[184826] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:47:34 2021
+
+[184801] Executable: ./master - Content: process [184826] terminated - Time: Sun Dec 26 18:47:34 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:47:34 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:47:34 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:47:40 2021
+
+[184801] Executable: ./master- Content: input_mode= 2 - Time: Sun Dec 26 18:47:40 2021
+
+[184801] Executable: ./master- Content: process ./np spawned - Time: Sun Dec 26 18:47:40 2021
+
+[184832] Executable: ./np- Content: father process spawned(consumer) - Time: Sun Dec 26 18:47:40 2021
+
+[184833] Executable: ./np - Content: child process forked (producer) - Time: Sun Dec 26 18:47:40 2021
+
+[184832] Executable: ./np- Content: starts reading(consumer) - Time: Sun Dec 26 18:47:40 2021
+
+[184833] Executable: ./np- Content: starts writing(producer) - Time: Sun Dec 26 18:47:40 2021
+
+[184833] Executable: ./np- Content: finishes writing(producer) - Time: Sun Dec 26 18:47:42 2021
+
+[184833] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:47:42 2021
+
+[184832] Executable: ./np- Content: finishes reading(consumer) - Time: Sun Dec 26 18:47:42 2021
+
+[184832] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:47:42 2021
+
+[184801] Executable: ./master - Content: process [184832] terminated - Time: Sun Dec 26 18:47:42 2021
+
+[184801] Executable: ./master - Content: unlinking named pipe  (./np) - Time: Sun Dec 26 18:47:42 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:47:42 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:47:57 2021
+
+[184801] Executable: ./master- Content: input_mode= 3 - Time: Sun Dec 26 18:47:58 2021
+
+[184801] Executable: ./master- Content: portno= 3333 - Time: Sun Dec 26 18:47:59 2021
+
+[184801] Executable: ./master - Content: process ./sock spawned - Time: Sun Dec 26 18:47:59 2021
+
+[184844] Executable: ./sock- Content: father process spawned(consumer) - Time: Sun Dec 26 18:47:59 2021
+
+[184845] Executable: ./sock- Content: child process forked (producer) - Time: Sun Dec 26 18:47:59 2021
+
+[184844] Executable: ./sock- Content: starts reading(consumer) - Time: Sun Dec 26 18:47:59 2021
+
+[184845] Executable: ./sock- Content: starts writing(producer) - Time: Sun Dec 26 18:47:59 2021
+
+[184845] Executable: ./sock- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:00 2021
+
+[184844] Executable: ./sock- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:00 2021
+
+[184844] Executable: ./sock- Content: time variables sent to master - Time: Sun Dec 26 18:48:00 2021
+
+[184801] Executable: ./master - Content: process [184844] terminated - Time: Sun Dec 26 18:48:00 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:00 2021
+
+[184845] Executable: ./sock- Content: time variables sent to master - Time: Sun Dec 26 18:48:00 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:48:07 2021
+
+[184801] Executable: ./master- Content: input_mode= 4 - Time: Sun Dec 26 18:48:07 2021
+
+[184801] Executable: ./master- Content: process circular_buffer_size= 4.0 - Time: Sun Dec 26 18:48:08 2021
+
+[184801] Executable: ./master- Content: process ./cb spawned - Time: Sun Dec 26 18:48:08 2021
+
+[184868] Executable: ./cb- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:08 2021
+
+[184868] Executable: ./cb- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:08 2021
+
+[184869] Executable: ./cb- Content: child process forked (producer) - Time: Sun Dec 26 18:48:08 2021
+
+[184869] Executable: ./cb- Content: starts writing(producer) - Time: Sun Dec 26 18:48:08 2021
+
+[184868] Executable: ./cb- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:08 2021
+
+[184868] Executable: ./cb- Content: time variables sent to master - Time: Sun Dec 26 18:48:08 2021
+
+[184869] Executable: ./cb- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:08 2021
+
+[184801] Executable: ./master - Content: process [184868] terminated - Time: Sun Dec 26 18:48:09 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:09 2021
+
+[184801] Executable: ./master - Content: input bufSize= 4- Time: Sun Dec 26 18:48:13 2021
+
+[184801] Executable: ./master- Content: input_mode= 4 - Time: Sun Dec 26 18:48:13 2021
+
+[184801] Executable: ./master- Content: process circular_buffer_size= 4.0 - Time: Sun Dec 26 18:48:13 2021
+
+[184801] Executable: ./master- Content: process ./cb spawned - Time: Sun Dec 26 18:48:13 2021
+
+[184876] Executable: ./cb- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:13 2021
+
+[184876] Executable: ./cb- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:13 2021
+
+[184877] Executable: ./cb- Content: child process forked (producer) - Time: Sun Dec 26 18:48:13 2021
+
+[184877] Executable: ./cb- Content: starts writing(producer) - Time: Sun Dec 26 18:48:14 2021
+
+[184876] Executable: ./cb- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:17 2021
+
+[184876] Executable: ./cb- Content: time variables sent to master - Time: Sun Dec 26 18:48:17 2021
+
+[184877] Executable: ./cb- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:17 2021
+
+[184801] Executable: ./master - Content: process [184876] terminated - Time: Sun Dec 26 18:48:17 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:17 2021
+
+[184801] Executable: ./master - Content: input bufSize= 4- Time: Sun Dec 26 18:48:27 2021
+
+[184801] Executable: ./master- Content: input_mode= 4 - Time: Sun Dec 26 18:48:27 2021
+
+[184801] Executable: ./master- Content: process circular_buffer_size= 4.0 - Time: Sun Dec 26 18:48:27 2021
+
+[184801] Executable: ./master- Content: process ./cb spawned - Time: Sun Dec 26 18:48:27 2021
+
+[184889] Executable: ./cb- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:27 2021
+
+[184889] Executable: ./cb- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:27 2021
+
+[184890] Executable: ./cb- Content: child process forked (producer) - Time: Sun Dec 26 18:48:27 2021
+
+[184890] Executable: ./cb- Content: starts writing(producer) - Time: Sun Dec 26 18:48:27 2021
+
+[184890] Executable: ./cb- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:30 2021
+
+[184889] Executable: ./cb- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:30 2021
+
+[184889] Executable: ./cb- Content: time variables sent to master - Time: Sun Dec 26 18:48:30 2021
+
+[184801] Executable: ./master - Content: process [184889] terminated - Time: Sun Dec 26 18:48:30 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:30 2021
+
+[184801] Executable: ./master - Content: input bufSize= 4- Time: Sun Dec 26 18:48:36 2021
+
+[184801] Executable: ./master- Content: input_mode= 3 - Time: Sun Dec 26 18:48:36 2021
+
+[184801] Executable: ./master- Content: portno= 3333 - Time: Sun Dec 26 18:48:38 2021
+
+[184801] Executable: ./master - Content: process ./sock spawned - Time: Sun Dec 26 18:48:38 2021
+
+[184898] Executable: ./sock- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:38 2021
+
+[184899] Executable: ./sock- Content: child process forked (producer) - Time: Sun Dec 26 18:48:38 2021
+
+[184898] Executable: ./sock- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:38 2021
+
+[184899] Executable: ./sock- Content: starts writing(producer) - Time: Sun Dec 26 18:48:38 2021
+
+[184899] Executable: ./sock- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:40 2021
+
+[184898] Executable: ./sock- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:40 2021
+
+[184899] Executable: ./sock- Content: time variables sent to master - Time: Sun Dec 26 18:48:40 2021
+
+[184898] Executable: ./sock- Content: time variables sent to master - Time: Sun Dec 26 18:48:40 2021
+
+[184801] Executable: ./master - Content: process [184898] terminated - Time: Sun Dec 26 18:48:40 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:40 2021
+
+[184801] Executable: ./master - Content: input bufSize= 3- Time: Sun Dec 26 18:48:45 2021
+
+[184801] Executable: ./master- Content: input_mode= 3 - Time: Sun Dec 26 18:48:47 2021
+
+[184801] Executable: ./master- Content: portno= 3333 - Time: Sun Dec 26 18:48:48 2021
+
+[184801] Executable: ./master - Content: process ./sock spawned - Time: Sun Dec 26 18:48:48 2021
+
+[184906] Executable: ./sock- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:48 2021
+
+[184907] Executable: ./sock- Content: child process forked (producer) - Time: Sun Dec 26 18:48:48 2021
+
+[184906] Executable: ./sock- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:48 2021
+
+[184907] Executable: ./sock- Content: starts writing(producer) - Time: Sun Dec 26 18:48:48 2021
+
+[184907] Executable: ./sock- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:49 2021
+
+[184907] Executable: ./sock- Content: time variables sent to master - Time: Sun Dec 26 18:48:49 2021
+
+[184906] Executable: ./sock- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:49 2021
+
+[184906] Executable: ./sock- Content: time variables sent to master - Time: Sun Dec 26 18:48:49 2021
+
+[184801] Executable: ./master - Content: process [184906] terminated - Time: Sun Dec 26 18:48:49 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:49 2021
+
+[184801] Executable: ./master - Content: input bufSize= 2- Time: Sun Dec 26 18:48:53 2021
+
+[184801] Executable: ./master- Content: input_mode= 2 - Time: Sun Dec 26 18:48:53 2021
+
+[184801] Executable: ./master- Content: process ./np spawned - Time: Sun Dec 26 18:48:53 2021
+
+[184912] Executable: ./np- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:53 2021
+
+[184913] Executable: ./np - Content: child process forked (producer) - Time: Sun Dec 26 18:48:53 2021
+
+[184912] Executable: ./np- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:53 2021
+
+[184913] Executable: ./np- Content: starts writing(producer) - Time: Sun Dec 26 18:48:53 2021
+
+[184913] Executable: ./np- Content: finishes writing(producer) - Time: Sun Dec 26 18:48:56 2021
+
+[184913] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:48:56 2021
+
+[184912] Executable: ./np- Content: finishes reading(consumer) - Time: Sun Dec 26 18:48:56 2021
+
+[184912] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:48:56 2021
+
+[184801] Executable: ./master - Content: process [184912] terminated - Time: Sun Dec 26 18:48:56 2021
+
+[184801] Executable: ./master - Content: unlinking named pipe  (./np) - Time: Sun Dec 26 18:48:56 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:48:56 2021
+
+[184801] Executable: ./master - Content: input bufSize= 2- Time: Sun Dec 26 18:48:58 2021
+
+[184801] Executable: ./master- Content: input_mode= 2 - Time: Sun Dec 26 18:48:59 2021
+
+[184801] Executable: ./master- Content: process ./np spawned - Time: Sun Dec 26 18:48:59 2021
+
+[184922] Executable: ./np- Content: father process spawned(consumer) - Time: Sun Dec 26 18:48:59 2021
+
+[184923] Executable: ./np - Content: child process forked (producer) - Time: Sun Dec 26 18:48:59 2021
+
+[184922] Executable: ./np- Content: starts reading(consumer) - Time: Sun Dec 26 18:48:59 2021
+
+[184923] Executable: ./np- Content: starts writing(producer) - Time: Sun Dec 26 18:48:59 2021
+
+[184923] Executable: ./np- Content: finishes writing(producer) - Time: Sun Dec 26 18:49:01 2021
+
+[184923] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:49:01 2021
+
+[184922] Executable: ./np- Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:01 2021
+
+[184922] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:49:01 2021
+
+[184801] Executable: ./master - Content: process [184922] terminated - Time: Sun Dec 26 18:49:01 2021
+
+[184801] Executable: ./master - Content: unlinking named pipe  (./np) - Time: Sun Dec 26 18:49:01 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:01 2021
+
+[184801] Executable: ./master - Content: input bufSize= 2- Time: Sun Dec 26 18:49:02 2021
+
+[184801] Executable: ./master- Content: input_mode= 2 - Time: Sun Dec 26 18:49:03 2021
+
+[184801] Executable: ./master- Content: process ./np spawned - Time: Sun Dec 26 18:49:03 2021
+
+[184931] Executable: ./np- Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:03 2021
+
+[184932] Executable: ./np - Content: child process forked (producer) - Time: Sun Dec 26 18:49:03 2021
+
+[184931] Executable: ./np- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:03 2021
+
+[184932] Executable: ./np- Content: starts writing(producer) - Time: Sun Dec 26 18:49:03 2021
+
+[184932] Executable: ./np- Content: finishes writing(producer) - Time: Sun Dec 26 18:49:05 2021
+
+[184932] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:49:05 2021
+
+[184931] Executable: ./np- Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:05 2021
+
+[184931] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:49:05 2021
+
+[184801] Executable: ./master - Content: process [184931] terminated - Time: Sun Dec 26 18:49:05 2021
+
+[184801] Executable: ./master - Content: unlinking named pipe  (./np) - Time: Sun Dec 26 18:49:05 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:05 2021
+
+[184801] Executable: ./master - Content: input bufSize= 2- Time: Sun Dec 26 18:49:07 2021
+
+[184801] Executable: ./master- Content: input_mode= 2 - Time: Sun Dec 26 18:49:07 2021
+
+[184801] Executable: ./master- Content: process ./np spawned - Time: Sun Dec 26 18:49:07 2021
+
+[184936] Executable: ./np- Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:07 2021
+
+[184937] Executable: ./np - Content: child process forked (producer) - Time: Sun Dec 26 18:49:07 2021
+
+[184936] Executable: ./np- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:07 2021
+
+[184937] Executable: ./np- Content: starts writing(producer) - Time: Sun Dec 26 18:49:07 2021
+
+[184937] Executable: ./np- Content: finishes writing(producer) - Time: Sun Dec 26 18:49:10 2021
+
+[184937] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:49:10 2021
+
+[184936] Executable: ./np- Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:10 2021
+
+[184936] Executable: ./np- Content: time variables sent to master - Time: Sun Dec 26 18:49:10 2021
+
+[184801] Executable: ./master - Content: process [184936] terminated - Time: Sun Dec 26 18:49:10 2021
+
+[184801] Executable: ./master - Content: unlinking named pipe  (./np) - Time: Sun Dec 26 18:49:10 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:10 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:49:11 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:49:11 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:49:11 2021
+
+[184941] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:11 2021
+
+[184941] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:11 2021
+
+[184942] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:49:11 2021
+
+[184942] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:49:11 2021
+
+[184942] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:49:11 2021
+
+[184942] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:11 2021
+
+[184941] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:11 2021
+
+[184941] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:11 2021
+
+[184801] Executable: ./master - Content: process [184941] terminated - Time: Sun Dec 26 18:49:11 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:49:11 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:11 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:49:13 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:49:13 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:49:13 2021
+
+[184944] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:13 2021
+
+[184944] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:13 2021
+
+[184945] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:49:13 2021
+
+[184945] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:49:13 2021
+
+[184945] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:49:14 2021
+
+[184945] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:14 2021
+
+[184944] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:14 2021
+
+[184944] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:14 2021
+
+[184801] Executable: ./master - Content: process [184944] terminated - Time: Sun Dec 26 18:49:14 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:49:14 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:14 2021
+
+[184801] Executable: ./master - Content: input bufSize= 2- Time: Sun Dec 26 18:49:15 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:49:15 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:49:15 2021
+
+[184948] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:15 2021
+
+[184948] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:15 2021
+
+[184949] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:49:15 2021
+
+[184949] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:49:15 2021
+
+[184949] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:49:16 2021
+
+[184949] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:16 2021
+
+[184948] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:16 2021
+
+[184948] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:16 2021
+
+[184801] Executable: ./master - Content: process [184948] terminated - Time: Sun Dec 26 18:49:16 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:49:16 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:16 2021
+
+[184801] Executable: ./master - Content: input bufSize= 2- Time: Sun Dec 26 18:49:18 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:49:18 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:49:18 2021
+
+[184952] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:18 2021
+
+[184952] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:18 2021
+
+[184953] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:49:18 2021
+
+[184953] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:49:18 2021
+
+[184953] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:49:20 2021
+
+[184953] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:20 2021
+
+[184952] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:20 2021
+
+[184952] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:20 2021
+
+[184801] Executable: ./master - Content: process [184952] terminated - Time: Sun Dec 26 18:49:20 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:49:20 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:20 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:49:21 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:49:21 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:49:21 2021
+
+[184957] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:21 2021
+
+[184957] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:21 2021
+
+[184958] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:49:21 2021
+
+[184958] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:49:21 2021
+
+[184958] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:49:22 2021
+
+[184958] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:22 2021
+
+[184957] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:22 2021
+
+[184957] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:22 2021
+
+[184801] Executable: ./master - Content: process [184957] terminated - Time: Sun Dec 26 18:49:22 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:49:22 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:22 2021
+
+[184801] Executable: ./master - Content: input bufSize= 1- Time: Sun Dec 26 18:49:23 2021
+
+[184801] Executable: ./master- Content: input_mode= 1 - Time: Sun Dec 26 18:49:23 2021
+
+[184801] Executable: ./master - Content: process ./up spawned - Time: Sun Dec 26 18:49:23 2021
+
+[184962] Executable: ./up - Content: father process spawned(consumer) - Time: Sun Dec 26 18:49:23 2021
+
+[184962] Executable: ./up- Content: starts reading(consumer) - Time: Sun Dec 26 18:49:23 2021
+
+[184963] Executable: ./up- Content: child process forked (producer) - Time: Sun Dec 26 18:49:23 2021
+
+[184963] Executable: ./up - Content: starts writing(producer) - Time: Sun Dec 26 18:49:23 2021
+
+[184963] Executable: ./up - Content: finishes writing(producer) - Time: Sun Dec 26 18:49:23 2021
+
+[184963] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:23 2021
+
+[184962] Executable: ./up - Content: finishes reading(consumer) - Time: Sun Dec 26 18:49:23 2021
+
+[184962] Executable: ./up- Content: time variables sent to master - Time: Sun Dec 26 18:49:23 2021
+
+[184801] Executable: ./master - Content: process [184962] terminated - Time: Sun Dec 26 18:49:23 2021
+
+[184801] Executable: ./master- Content: closing file descriptors (./up) - Time: Sun Dec 26 18:49:23 2021
+
+[184801] Executable: ./master- Content: execution completed - Time: Sun Dec 26 18:49:23 2021
+
+[184801] Executable: ./master- Content: User pressed '-1' - Time: Sun Dec 26 18:49:37 2021
+

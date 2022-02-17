@@ -1,0 +1,21 @@
+
+########################## UN NAMED PIPES #############################
+
+The Un-Named Pipes are used in our project as a mechanism for unidirectional interprocess communication between the producer process and the consumer process. Generally speaking, an unnamed pipe consists of two different hands. the first hand will write data on the pipe the other one will read from it. 
+
+If this method of comunication is choosen by the user, in the master process an Unnamed Pipe will be created. The program will retrieve the two file descriptors of the pipe and it will send them via arguments of the exec function to the program that will manage the communication between the producer and the consumer program.
+
+After retrieving the required data for the exchange, the process will fork itself into a producer and a consumer type of process. 
+
+The child portion will represent the producer and the parent the consumer. 
+
+The producer will go through the following steps:
+
+-1- It will start producing the assigned amount of data and it'll store it inside of an array. This memory buffer will contain maximum 0.8 MB of memory. If the size requested to transfer is higher than the prefixed amount, the same array will be sent to the receiver as many time as needed for matching the correct amount of memory to transfer.
+
+-2- The data sent on the pipe element by element throught the use of the write syscall. 
+
+Concurrently the consumer process will reand and sequentially store the data into an array of the same dimentions of the previous one through the use of a similar procedure. The array will be filled up until it's full. Once the maximum amount of data will be reached the process will start filling it back from the first buffer spot. 
+
+Once the transfering data procedure terminates, the time values retrieved by the two processes (repectively at the beginning of the transfer for the producer and at the end of it for the consumer) wil be sent by 2 different named pipes to the master process which will subtract them to find the time spent for transfering the data.
+
